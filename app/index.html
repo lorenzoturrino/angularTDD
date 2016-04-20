@@ -11,12 +11,12 @@
     <div id="todoCont" ng-controller="ToDoController as controller">
       <ul ng-repeat="todo in controller.todos">
         <li>
-          {{todo}}
+          {{todo.text}}: {{todo.status}}
         </li>
       </ul>
       <input type="text" id="inputText" ng-model="todoText" placeholder="enter something">
-      {{todoText}}
-      <button id="addToDo" ng-click="controller.addToDo(todoText)">Click me</button>
+      <button id="addToDo" ng-click="controller.addToDo(todoText)">Add</button>
+      <button id="removeToDo" ng-click="controller.removeToDo()">Remove</button>
     </div>
 </body>
 </html>
