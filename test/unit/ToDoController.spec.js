@@ -9,8 +9,8 @@ describe('ToDoController', function() {
 
   it('initialises with two toDo', function() {
 
-  var todo1 = {text: "ToDo1", status: "complete"};
-  var todo2 = {text: "ToDo2", status: "incomplete"};
+  var todo1 = {text: "ToDo1", complete: true};
+  var todo2 = {text: "ToDo2", complete: false};
   expect(ctrl.todos).toEqual([todo1,todo2]);
   });
 

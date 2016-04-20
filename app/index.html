@@ -4,14 +4,16 @@
     <meta charset="utf-8">
     <script src="bower_components/angular/angular.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/ToDoFactory.js"></script>
     <script src="js/controllers/ToDoController.js"></script>
     <title>Todos App</title>
   </head>
   <body>
     <div id="todoCont" ng-controller="ToDoController as controller">
+{{controller.dot}}
       <ul ng-repeat="todo in controller.todos">
         <li>
-          {{todo.text}}: {{todo.status}}
+          {{todo.text}}: {{todo.complete ? 'complete' : 'incomplete'}}
         </li>
       </ul>
       <input type="text" id="inputText" ng-model="todoText" placeholder="enter something">
