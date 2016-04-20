@@ -1,0 +1,20 @@
+{
+  "name": "angulartdd",
+  "description": "this is a description",
+  "main": "index.js",
+  "authors": [
+    "Robota <lorenzo.turrino@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.5"
+  }
+}
