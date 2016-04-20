@@ -10,6 +10,9 @@ module.exports = function(config){
       'test/unit/**/*.js'
     ],
 
+
+    singleRun: true,
+
     autoWatch : true,
 
     frameworks: ['jasmine'],

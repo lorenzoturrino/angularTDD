@@ -8,8 +8,15 @@
     <title>Todos App</title>
   </head>
   <body>
-  <div id="todo" ng-controller="ToDoController as controller">
-      {{ controller.todo }}
-  </div>
-  </body>
+    <div id="todoCont" ng-controller="ToDoController as controller">
+      <ul ng-repeat="todo in controller.todos">
+        <li>
+          {{todo}}
+        </li>
+      </ul>
+      <input type="text" id="inputText" ng-model="todoText" placeholder="enter something">
+      {{todoText}}
+      <button id="addToDo" ng-click="controller.addToDo(todoText)">Click me</button>
+    </div>
+</body>
 </html>
